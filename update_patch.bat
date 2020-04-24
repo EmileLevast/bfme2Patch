@@ -30,13 +30,19 @@ if '%errorlevel%' NEQ '0' (
 :--------------------------------------  
 ECHO .
 ECHO .
-ECHO Tu Telecharges le patch 2.02 v8.2.0 
+ECHO Voici les changements du patch 8.2.0 :
+curl https://raw.githubusercontent.com/EmileLevast/bfme2Patch/master/commit_logs_8.2.0.txt
+ECHO .
+ECHO Telechargement ...
 curl https://raw.githubusercontent.com/EmileLevast/bfme2Patch/master/%%23%%23%%23%%23%%23%%23%%23%%23%%23%%23%%23%%23202_v8.2.0.big > ############202_v8.2.0.big
 ECHO Telechargement termine
 
 ECHO .
 ECHO .
-set /p saisie=Veux-tu telecharger aussi le 202.v8.0.0 ? (yes/no)
+ECHO Voici les changements du patch 8.0.0 :
+curl https://raw.githubusercontent.com/EmileLevast/bfme2Patch/master/commit_logs_8.0.0.txt
+ECHO .
+set /p saisie=Veux-tu les telecharger (c'est plus long) ? (yes/no)
 if %saisie% == yes (
 ECHO et bah c'est parti pour le patch 2.02 v8.0.0
 curl https://raw.githubusercontent.com/EmileLevast/bfme2Patch/master/%%23%%23%%23%%23%%23%%23%%23%%23%%23%%23202_v8.0.0.big > ##########202_v8.0.0.big

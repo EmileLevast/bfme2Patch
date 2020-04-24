@@ -31,4 +31,8 @@ if '%errorlevel%' NEQ '0' (
 :--------------------------------------  
 
 ::on recupere la list des logs et on la met dans un fichier que l'on pushera plus tard
-(git log --pretty=format:"%%s") > commit_logs.txt
+git log --pretty=format:"%%s" --grep="v8.2.0" > commit_logs_8.2.0.txt
+git log --grep="nodlor" --grep="first commit" --invert-grep --until="Thu Apr 23 20:35:29" --pretty=format:"%%s" >> commit_logs_8.2.0.txt
+git log --pretty=format:"%%s" --grep="v8.0.0"> commit_logs_8.0.0.txt
+git log --grep="nodlor crushable" --pretty=format:"%%s" >> commit_logs_8.0.0.txt
+
