@@ -1,3 +1,4 @@
+make Mumakil solid as a rock v8.2.0. 
 troll club don't reach target fixed (not sure)
 OlogHai Cah reduce radius and rate attack
 Lindon Horse Archer Raise damage
